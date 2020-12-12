@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <title>FCC-Survey_Project</title>
+</head>
+
+<body>
+  
+  <div id="first-page">
+    
+    <div class="name-email">
+      <h1 id="title">Cats & Dogs Survey Form</h1>
+      <p id="description">Share your experience as an owner!</p>
+      <img class="tsui" src="pets.png" alt="">
+    </div>
+    
+    <hr>
+    
+    <div class="forms">
+      <form id="survey-form">
+        
+      <div class="name">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Name of Owner" required>
+      </div>
+        
+      <div class="email">
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Email Address" required>
+      </div>
+        
+      <fieldset class="gender">
+        <legend>Please select your Pet's gender:</legend>
+        <div class="g-select">
+          <input type="checkbox" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <br>
+          <input type="checkbox" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </div>
+      </fieldset>
+        
+      <fieldset class="age">
+        <legend>Please select your Pet's age:</legend>
+        <div class="a-select">
+          <input type="radio" id="age-1" name="age" value="Young">
+          <label for="age1">Young</label>
+          <br>
+          <input type="radio" id="age-2" name="age" value="Adult">
+          <label for="age2">Adult</label>
+          <br>
+          <input type="radio" id="age-3" name="age" value="Old">
+          <label for="age3">Old</label>
+        </div>
+      </fieldset>
+
+      <div class="numb">
+        <label for="number" id="number-label">How many Pets do you have:</label>
+        <input type="number" id="number" placeholder="0" min="1" max="10" required>
+      </div>
+      
+      <div class="what-pet">
+        <label for="pet">What is/are your Pets:</label>
+        <select name="pet" id="dropdown">
+          <option value="Dog">Dog</option>
+          <option value="Cat">Cat</option>
+          <option value="Dog&Cat">Dog and Cat</option>
+        </select>
+      </div>
+      
+      <fieldset class="suggest">
+        <legend>Message:</legend>
+        <textarea id="text-area" name="" placeholder="Tell us your coolest Pet Stories!" rows="5" cols="50"></textarea>
+      </fieldset>
+
+      <button id="submit" type="submit" class="button"><span>Submit</span></button>
+      </form>
+
+  <hr>
+        
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+    
+</html>

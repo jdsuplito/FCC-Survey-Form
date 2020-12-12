@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(193, 231, 247);
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+#first-page {
+  width: 60%;
+	margin: 40px 0;
+	background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0 0 10px 6px #00000026, inset 0 0 10px 6px #00000026;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+
+hr {
+  border: 3px solid rgb(129 175 159);
+}
+
+.name-email {
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.tsui {
+  height: 145px;
+  position: absolute;
+  bottom: -20px;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.name, .email {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 1.2rem;
+}
+
+#title, #description {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.gender, .age, .suggest {
+  max-width: 420px;
+  margin: 10px auto;
+  font-size: 1.2rem;
+}
+
+.g-select, .a-select {
+  display: inline-block;
+  text-align: left;
+  margin: 5px auto;
+}
+
+#survey-form, #submit  {
+  text-align: center;
+}
+
+.button, .button:focus {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(129 175 159);
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 25px;
+  position: relative;
+  box-shadow: -1px 4px 5px 0px #00000063;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button::after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+  font-size: 2.3rem;
+}
+
+.button:hover span {
+  padding-right: 27px;
+}
+
+.button:hover::after {
+  opacity: 1;
+  right: 15px;
+}
+
+.numb, .what-pet {
+  font-size: 1.2rem;
+  margin: 15px;
+}
+
+#number, #dropdown {
+  font-size: 1rem;
+}
+
+#text-area {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    background: transparent;
+    padding: 4px 12px;
+}
+
+#text-area:focus {
+  outline: none;
+}
