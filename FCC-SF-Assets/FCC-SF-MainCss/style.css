@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.mainBody {
+  background: #e5f2ff;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+
+#first-page {
+  margin: auto;
+  width: 50%;
+  height: auto;
+  padding: 50px;
+	background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0 0 10px 6px #00000026, inset 0 0 10px 6px #00000026;
+}
+
+.name-email {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+#title {
+  color: #739fc4;
+  margin-bottom: 5px;
+}
+
+#description {
+  color: #898f97;
+  margin-bottom: 10px;
+}
+
+.tsui {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.forms {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+  border: 3px solid #739fc4;
+  color: #898f97;
+}
+
+#survey-form, .name-email-con, .gender-con, .age-con, .numb-whatPet .text-con, .btn-con {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.name, .email {
+  padding: 20px;
+  display: inline-block;
+  font-size: 1.4em;
+  font-weight: bolder;
+  margin: 20px;
+}
+
+#name, #email {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-bottom: 2px solid #898f97;
+}
+
+#name:hover, #email:hover {
+  border-bottom: 2px solid #39aaf5;
+}
+
+.gender, .age, .many, .suggest {
+  padding: 10px;
+  margin: 20px;
+}
+
+.gender-legend, .age-legend, .suggest-legend {
+  background: #edf7fd;
+  padding: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: 1px solid #898f97;
+  border-radius: 5px;
+}
+
+.gender-male, .gender-female, .age-young, .age-adult, .age-old, .numb, .what-pet {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.label-male, .label-female, .label-young, .label-adult, .label-old {
+  padding-left: 10px;
+}
+
+#male:hover, #female:hover, #age-1:hover, #age-2:hover, #age-3:hover {
+  transform: scale(2);
+}
+
+#number-label, .whatPet-label {
+  padding-right: 10px;
+}
+
+#number, #dropdown {
+  border: 1px solid #898f97;
+  background: #edf7fd;
+  border-radius: 5px;
+  font-size: 0.8em;
+  color: #898f97;
+  outline: none;
+}
+
+#text-area {
+  width: 100%;
+  height: auto;
+  resize: none;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.button, .button:focus {
+  background-color: #39aaf5;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  font-size: 1.5em;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 0px 0px 7px 15px;
+  box-shadow: 1px 1px 5px 1px #00000063;
+}
+
+.button span {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button::after {
+  content: '\00bb';
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 1.5em;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover::after {
+  opacity: 1;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mainBody {
+    padding: 20px 0;
+  }
+
+  #first-page {
+    padding: 20px;
+    width: 90%;
+  }
+
+  #title {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  #description {
+    font-size: 1em;
+  }
+  
+  .tsui {
+    width: 40%;
+  }
+
+  .name, .email {
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px;
+  }
+  
+  #name, #email {
+    font-size: 0.8rem;
+  }
+  
+  .gender, .age, .many, .suggest {
+    padding: 5px;
+    margin: 15px 0;
+  }
+  
+  .gender-legend, .age-legend, .suggest-legend {
+    font-size: 0.8em;
+  }
+  
+  .gender-male, .gender-female, .age-young, .age-adult, .age-old, .numb, .what-pet {
+    font-size: 0.8em;
+  }
+
+  .age-young, .age-adult, .age-old {
+    padding: 0 10px;
+  }
+
+  #male:hover, #female:hover, #age-1:hover, #age-2:hover, #age-3:hover {
+    transform: scale(1);
+  }
+  
+  #number, #dropdown {
+    font-size: 0.9em;
+  }
+
+  .button {
+    padding: 0px 0px 5px 12px;
+    font-size: 1em;
+    margin: 10px 0;
+  }
+}
