@@ -1,3 +1,7 @@
+:root {
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -63,7 +67,7 @@
 .name, .email {
   padding: 20px;
   display: inline-block;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   font-weight: bolder;
   margin: 20px;
 }
@@ -87,7 +91,7 @@
 .gender-legend, .age-legend, .suggest-legend {
   background: #edf7fd;
   padding: 5px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-weight: bold;
   border: 1px solid #898f97;
   border-radius: 5px;
@@ -96,7 +100,7 @@
 .gender-male, .gender-female, .age-young, .age-adult, .age-old, .numb, .what-pet {
   display: inline-block;
   padding: 0 20px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   margin: 10px 0;
 }
 
@@ -116,9 +120,10 @@
   border: 1px solid #898f97;
   background: #edf7fd;
   border-radius: 5px;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   color: #898f97;
   outline: none;
+  text-align: center;
 }
 
 #text-area {
@@ -128,6 +133,7 @@
   border: none;
   background: transparent;
   outline: none;
+  font-size: 1rem;
 }
 
 .button, .button:focus {
@@ -135,7 +141,7 @@
   border: none;
   outline: none;
   color: #FFFFFF;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   transition: all 0.5s;
   cursor: pointer;
   padding: 0px 0px 7px 15px;
@@ -151,7 +157,7 @@
   content: '\00bb';
   opacity: 0;
   transition: 0.5s;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .button:hover span {
@@ -163,74 +169,105 @@
   padding-right: 10px;
 }
 
-@media screen and (max-width: 700px) {
-  
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-
-  .mainBody {
-    padding: 20px 0;
+/* MEDIA QUERYS */
+/*  Tablets in landscape mode, older desktop monitors */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  :root {
+    font-size: 12px;
   }
 
   #first-page {
-    padding: 20px;
-    width: 90%;
+    width: 80%;
+    padding: 40px;
   }
 
-  #title {
-    margin: 0;
-    font-size: 1.5em;
+  .button, .button:focus {
+    padding: 10px 5px 10px 10px;
   }
-  
-  #description {
-    font-size: 1em;
+}
+
+/*  Tablets in portrait mode, large display smartphones landscape mode */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    font-size: 12px;
   }
-  
-  .tsui {
-    width: 40%;
+
+  #first-page {
+    width: 90%;
+    padding: 40px;
+  }
+
+  .button, .button:focus {
+    padding: 7px 2px 7px 7px;
+  }
+}
+
+  /*  Smartphones in landscape mode */
+@media screen and (min-width: 421px) and (max-width: 767px) {
+  :root {
+    font-size: 10px;
+  }
+
+  #first-page {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .forms{
+    padding: 10px;
   }
 
   .name, .email {
-    padding: 10px;
-    font-size: 1em;
-    margin: 10px;
-  }
-  
-  #name, #email {
-    font-size: 0.8rem;
-  }
-  
-  .gender, .age, .many, .suggest {
-    padding: 5px;
-    margin: 15px 0;
-  }
-  
-  .gender-legend, .age-legend, .suggest-legend {
-    font-size: 0.8em;
-  }
-  
-  .gender-male, .gender-female, .age-young, .age-adult, .age-old, .numb, .what-pet {
-    font-size: 0.8em;
+    margin: 0;
+    padding: 15px;
   }
 
-  .age-young, .age-adult, .age-old {
+  .gender, .age, .many, .suggest {
+    padding: 5px;
+    margin: 20px 5px;
+  }
+
+  .gender-male, .gender-female, .age-young, 
+  .age-adult, .age-old, .numb, .what-pet {
+    padding: 0 12px;
+  }
+
+  .button, .button:focus {
+    padding: 5px 0px 5px 5px;
+  }
+}
+
+/*  Smartphones in portrait mode  */
+@media screen and (max-width: 420px) {
+  :root {
+    font-size: 9px;
+  }
+
+  #first-page {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .forms{
+    padding: 10px;
+  }
+
+  .name, .email {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .gender, .age, .many, .suggest {
+    padding: 5px;
+    margin: 10px 5px;
+  }
+
+  .gender-male, .gender-female, .age-young, 
+  .age-adult, .age-old, .numb, .what-pet {
     padding: 0 10px;
   }
 
-  #male:hover, #female:hover, #age-1:hover, #age-2:hover, #age-3:hover {
-    transform: scale(1);
-  }
-  
-  #number, #dropdown {
-    font-size: 0.9em;
-  }
-
-  .button {
-    padding: 0px 0px 5px 12px;
-    font-size: 1em;
-    margin: 10px 0;
+  .button, .button:focus {
+    padding: 5px 0px 5px 5px;
   }
 }
