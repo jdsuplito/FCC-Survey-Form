@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+body {
+  background: #e5f2ff;
+}
+
 .mainBody {
   background: #e5f2ff;
   width: 100%;
@@ -177,8 +181,8 @@
   }
 
   #first-page {
-    width: 80%;
-    padding: 40px;
+    width: 70%;
+    padding: 50px;
   }
 
   .button, .button:focus {
@@ -193,8 +197,12 @@
   }
 
   #first-page {
-    width: 90%;
-    padding: 40px;
+    width: 70%;
+  }
+
+  .name, .email {
+    margin: 0;
+    padding: 15px;
   }
 
   .button, .button:focus {
@@ -214,7 +222,7 @@
   }
 
   .forms{
-    padding: 10px;
+    padding: 20px;
   }
 
   .name, .email {
@@ -244,7 +252,7 @@
   }
 
   #first-page {
-    width: 80%;
+    width: 90%;
     padding: 20px;
   }
 
